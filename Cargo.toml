@@ -3,6 +3,7 @@ name = "enum_str"
 version = "0.1.0"
 authors = ["lambdasqd <lambdasqd@gmail.com>"]
 description = "Creates a unitary enum and conversions from enum variants to string and vice versa"
+documentation = "https://docs.rs/enum_str/"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/lambdasqd/enum_str-rs"
 keywords = ["enum", "macro", "string"]
