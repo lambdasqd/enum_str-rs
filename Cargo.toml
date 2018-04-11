@@ -10,6 +10,9 @@ keywords = ["enum", "macro", "string"]
 readme = "README.md"
 include = ["Cargo.toml", "src/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
 
+[badges]
+travis-ci = { repository = "lambdasqd/enum_str-rs" }
+
 [dependencies]
 failure = "0.1"
 failure_derive = "0.1"
