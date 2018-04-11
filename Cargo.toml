@@ -1,6 +1,6 @@
 [package]
 name = "enum_str"
-version = "0.1.1"
+version = "0.1.2-alpha.0"
 authors = ["lambdasqd <lambdasqd@gmail.com>"]
 description = "Creates a unitary enum and conversions from enum variants to string and vice versa"
 documentation = "https://docs.rs/enum_str/"
