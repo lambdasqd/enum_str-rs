@@ -1,0 +1,14 @@
+[package]
+name = "enum_str"
+version = "0.1.0"
+authors = ["lambdasqd <lambdasqd@gmail.com>"]
+description = "Creates a unitary enum and conversions from enum variants to string and vice versa"
+license = "Apache 2.0 or MIT"
+repository = "https://github.com/lambdasqd/enum_str-rs"
+keywords = ["enum", "macro", "string"]
+readme = "README.md"
+include = ["Cargo.toml", "src/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+
+[dependencies]
+failure = "0.1"
+failure_derive = "0.1"
