@@ -7,7 +7,7 @@ use std::str::FromStr;
 use enum_str::{Error, AsStr};
 
 enum_str! {
-    Vegetable,
+    Fruit,
     (Apple, "🍎"),
     (Pineapple, "🍍"),
     (Strawberry, "🍓"),
@@ -15,20 +15,20 @@ enum_str! {
 
 #[test]
 fn test_as_str() {
-    let _ = Vegetable::Apple;
-    assert_eq!("🍎", Vegetable::Apple.as_str());
+    let _ = Fruit::Apple;
+    assert_eq!("🍎", Fruit::Apple.as_str());
 }
 
 #[test]
 fn test_from_str_ok() {
-    let _ = Vegetable::Apple;
-    assert_eq!(Vegetable::Apple, Vegetable::from_str("🍎").unwrap());
-    assert_eq!(Vegetable::Strawberry, Vegetable::from_str("🍓").unwrap());
+    let _ = Fruit::Apple;
+    assert_eq!(Fruit::Apple, Fruit::from_str("🍎").unwrap());
+    assert_eq!(Fruit::Strawberry, Fruit::from_str("🍓").unwrap());
 }
 
 #[test]
 fn test_from_str_err() {
-    let result: Result<Vegetable, Error> = Vegetable::from_str("Strawberry");
+    let result: Result<Fruit, Error> = Fruit::from_str("Strawberry");
     let _ = result.and_then(
         |_v| -> Result<(), Error> {
             panic!("expected error");
@@ -38,7 +38,7 @@ fn test_from_str_err() {
             match e {
                 Error::ParseStrError { input, to } => {
                     assert_eq!("Strawberry", input);
-                    assert_eq!("Vegetable", to);
+                    assert_eq!("Fruit", to);
                 },
                 /* _ => panic!("wrong error") */
             }

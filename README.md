@@ -14,12 +14,12 @@ use enum_str::{Error, AsStr};
 
 fn main() {
     enum_str! {
-       Vegetable,
+       Fruit,
        (Apple, "🍎"),
        (Pineapple, "🍍"),
        (Strawberry, "🍓"),
     }
-    assert_eq!("🍎", Vegetable::Apple.as_str());
-    assert_eq!(Vegetable::Apple, Vegetable::from_str("🍎").unwrap());
+    assert_eq!("🍎", Fruit::Apple.as_str());
+    assert_eq!(Fruit::Apple, Fruit::from_str("🍎").unwrap());
 }
 ```
